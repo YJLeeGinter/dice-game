@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dice Game</title>
+    <style>
+        
+        .box{
+            display: inline-block;
+            text-align: center;
+        }
+        #computer1 {
+            width: 150px;
+            height: 170px;
+            background: url('diceimg.png') 0 0;
+        }
+       
+       #computer2{ 
+            width: 150px;
+            height: 170px;
+            background: url('diceimg.png') 0 0;
+       }
+       .btn{
+           border: none;
+           font-size: 1.1rem;
+           background-color: beige;
+           padding-left : 15px;
+           padding-right: 15px;
+           padding-top: 10px;
+           padding-bottom: 10px;
+       }
+       .btn:hover{
+           background-color: wheat;
+       }
+       .btn:disabled{
+           background-color: rgb(229, 232, 233);
+       }
+       .message{
+        text-align: center;
+       }
+
+       #start1{
+          
+       }
+       
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div id="computer1">
+        </div>
+        <button id="stop1" class="btn">Stop</button>
+    </div>
+    <div class="box">
+        <div id="computer2">
+        </div>
+        <button id="stop2" class="btn">Stop</button>
+    </div>
+        <div class="message"></div>
+        <button id="start1" class="btn">Start</button>
+
+ 
+
+    
+    
+    <script src="game.js"></script>
+</body>
+
+</html>
